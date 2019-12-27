@@ -10,7 +10,7 @@ import (
 	"strings"
 )
 
-func f2str(f float64) string {
+func f2strs(f float64) string {
 	str := strconv.FormatFloat(f, 'f', -1, 64)
 	return str
 }

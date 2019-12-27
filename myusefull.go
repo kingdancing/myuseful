@@ -10,7 +10,7 @@ import (
 	"strings"
 )
 
-func f2strs(f float64) string {
+func f2str(f float64) string {
 	str := strconv.FormatFloat(f, 'f', -1, 64)
 	return str
 }
@@ -26,7 +26,7 @@ func Between(str, starting, ending string) string {
 	}
 	return str[s : s+e]
 }
-func log_e(e interface{}) {
+func log_err(e interface{}) {
 	f, err := os.OpenFile("error.log", os.O_WRONLY|os.O_CREATE|os.O_APPEND, 0644)
 	if err != nil {
 		log.Fatal(err)
